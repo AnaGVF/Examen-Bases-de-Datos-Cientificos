@@ -1,240 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Examen de Bases de Datos Científicos</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <script defer src="js/Examen.js"></script>
-
-    <link rel="icon" href="img/exam.png" type="image/icon type">
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examen de Bases de Datos Científicos</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+  <script defer src="js/Examen.js"></script>
+  
+  <link rel="icon" href="img/exam.png" type="image/icon type">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 <body style="height: auto;">
-    <!-- Navbar Header -->
-    <header style="width: -webkit-fill-available; z-index: 100;">
-        <div class="container">
-          <nav class="navbar navbar-expand-md">
-            <a class="navbar-brand" href="Home.html#Home">
-              <img src="img/exam.png" height="70" alt="image">
-            </a>
-      
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav3" aria-controls="navbarNav3" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-      
-            <div class="collapse navbar-collapse" id="navbarNav3">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Instrucciones.html">Instrucciones</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Examen.html">Examen</a>
-                </li>
-              </ul>
-
-            </div>
-          </nav>
+  <!-- Navbar Header -->
+  <header style="width: -webkit-fill-available; z-index: 100;">
+    <div class="container">
+      <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="Home.html#Home">
+          <img src="img/exam.png" height="70" alt="image">
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav3" aria-controls="navbarNav3" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav3">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Instrucciones.html">Instrucciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Examen.html">Examen</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Respuestas.html">Respuestas</a>
+            </li>
+          </ul>
+          
         </div>
-      </header>
-
-      <!-- Evaluación - 7 Hábitos de la Gente Altamente Efectiva  -->
-      <section class="fdb-block" id="menu">
-        <div class="container" style="height: auto;">
-          <div class="row text-center">
-            <div class="col-12" style="margin-top: 1%;">
-              <h1 style="font-family: 'Special Elite', cursive; font-weight: bold;">Examen</h1>
-              <h1 style="font-family: 'Special Elite', cursive; font-weight: bold;">Bases de Datos Científicos: <br> American Institute of Physics</h1>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Examen: American Institute of Physics  -->
+  <section class="fdb-block" id="menu">
+    <div class="container" style="height: auto;">
+      <div class="row text-center">
+        <div class="col-12" style="margin-top: 1%;">
+          <h1 style="font-family: 'Special Elite', cursive; font-weight: bold;">Examen</h1>
+          <h1 style="font-family: 'Special Elite', cursive; font-weight: bold;">Bases de Datos Científicos: <br> American Institute of Physics</h1>
+        </div>
+      </div>
+      <div class="row text-left mt-3" style="display: flex; align-items: center; justify-content: space-evenly; flex-direction: column;">
+        <div class="col-12 col-md">
+          <div class="row mb-5" style="border-radius: 20px; background: #FFEFBA;  /* fallback for old browsers */
+          background: -webkit-linear-gradient(to top, #FFFFFF, #fff8e0);  /* Chrome 10-25, Safari 5.1-6 */
+          background: linear-gradient(to top, #FFFFFF, #fff4cd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          height: auto; padding: 20px; box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;">
+          
+          <!-- Pregunta #1 -->
+          <div class="col-12 mt-2" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
+            <h4 class="mb-3 mb-4">1. ¿Cuál es el enlace correcto para acceder al Portal del American Institute of Physics (AIP)?</h4>
+            <div class="h5" style="display: flex; width: -webkit-fill-available; justify-content: space-evenly;">
+              <!-- Opción #1 -->
+              <div>
+                <input id="scitation1" name="pregunta1" type="radio" style="zoom: 1.2;"> http://scitation.aip.org
+              </div>
+              <!-- Opción #2 -->
+              <div>
+                <input id="scitation2" name="pregunta1" type="radio" style="zoom: 1.2;"> http://scitation.com
+              </div>
+              <!-- Opción #3 -->
+              <div>
+                <input id="scitation3" name="pregunta1" type="radio" style="zoom: 1.2;"> http://scitation.com.mx
+              </div>
+              <!-- Opción #4 -->
+              <div>
+                <input id="scitation4" name="pregunta1" type="radio" style="zoom: 1.2;"> http://scitation.aip.com
+              </div>
+              
             </div>
+            <div id="retroalimentacion">
+            </div>                    
           </div>
-          <div class="row text-left mt-3" style="display: flex; align-items: center; justify-content: space-evenly; flex-direction: column;">
-            <div class="col-12 col-md">
-              <div class="row mb-5" style="border-radius: 20px; background: #FFEFBA;  /* fallback for old browsers */
-              background: -webkit-linear-gradient(to top, #FFFFFF, #fff8e0);  /* Chrome 10-25, Safari 5.1-6 */
-              background: linear-gradient(to top, #FFFFFF, #fff4cd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-              height: auto; padding: 20px; box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;">
-                <!-- Pregunta #1 -->
-                <div class="col-12 mt-2" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
-                  <h4 class="mb-3 mb-4">1. ¿Qué asume una persona proactiva?</h4>
-                  <div class="h4" style="display: flex; width: -webkit-fill-available; justify-content: space-evenly;">
-                    <!-- Opción #1 -->
-                    <div>
-                        <input id="responsabilidad" type="checkbox" style="zoom: 1.5;"> Responsabilidad
-                    </div>
-                    <!-- Opción #2 -->
-                    <div>
-                        <input id="enojo" type="checkbox" style="zoom: 1.5;"> Enojo
-                    </div>
-                    <!-- Opción #3 -->
-                    <div>
-                        <input id="pereza" type="checkbox" style="zoom: 1.5;"> Pereza
-                    </div>
-                    <!-- Opción #4 -->
-                    <div>
-                        <input id="negatividad" type="checkbox" style="zoom: 1.5;"> Negatividad
-                    </div>
-                      
-                  </div>
-                  <div id="retroalimentacion">
-                  </div>                    
-                </div>
-
-                <!-- Pregunta #2 -->
-                <div class="col-12 mt-5" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
-                    <h4 class="mb-3 mb-4">2. ¿Qué deben tener las personas para programar su futuro?</h4>
-                    <div class="h4" style="display: flex; width: -webkit-fill-available; justify-content: space-evenly;">
-                      <!-- Opción #1 -->
-                      <div>
-                          <input id="flojera" type="checkbox" style="zoom: 1.5;"> Flojera
-                      </div>
-                      <!-- Opción #2 -->
-                      <div>
-                          <input id="empeno" type="checkbox" style="zoom: 1.5;"> Falta de empeño
-                      </div>
-                      <!-- Opción #3 -->
-                      <div>
-                          <input id="odio" type="checkbox" style="zoom: 1.5;"> Odio
-                      </div>
-                      <!-- Opción #4 -->
-                      <div>
-                          <input id="mision" type="checkbox" style="zoom: 1.5;"> Misión Personal
-                      </div>
-                        
-                    </div>
-                    <div id="retroalimentacion_2">
-                    </div>                    
-                </div>
-
-                <!-- Pregunta #3 -->
-                <div class="col-12 mt-5" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
-                    <h4 class="mb-3 mb-4">3. ¿Qué es importante hacer para poder comprender distintos puntos de vista?</h4>
-                    <div class="h4" style="display: flex; width: -webkit-fill-available; justify-content: space-evenly;">
-                      <!-- Opción #1 -->
-                      <div>
-                          <input id="saltar" type="checkbox" style="zoom: 1.5;"> Saltar
-                      </div>
-                      <!-- Opción #2 -->
-                      <div>
-                          <input id="gritar" type="checkbox" style="zoom: 1.5;"> Gritar
-                      </div>
-                      <!-- Opción #3 -->
-                      <div>
-                          <input id="escuchar" type="checkbox" style="zoom: 1.5;"> Escuchar
-                      </div>
-                      <!-- Opción #4 -->
-                      <div>
-                          <input id="ignorar" type="checkbox" style="zoom: 1.5;"> Ignorar
-                      </div>
-                        
-                    </div>
-                    <div id="retroalimentacion_3">
-                    </div>                    
-                </div>
-
-                <!-- Pregunta #4 -->
-                <div class="col-12 mt-5" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
-                    <h4 class="mb-3 mb-4">4. ¿Qué se necesita para cooperar en un equipo eficientemente?</h4>
-                    <div class="h4" style="display: flex; width: -webkit-fill-available; justify-content: space-evenly;">
-                      <!-- Opción #1 -->
-                      <div>
-                          <input id="peleas" type="checkbox" style="zoom: 1.5;"> Peleas
-                      </div>
-                      <!-- Opción #2 -->
-                      <div>
-                          <input id="comunicacion" type="checkbox" style="zoom: 1.5;"> Comunicación
-                      </div>
-                      <!-- Opción #3 -->
-                      <div>
-                          <input id="inasistencia" type="checkbox" style="zoom: 1.5;"> Inasistencia
-                      </div>
-                      <!-- Opción #4 -->
-                      <div>
-                          <input id="distracciones" type="checkbox" style="zoom: 1.5;"> Distracciones
-                      </div>
-                        
-                    </div>
-                    <div id="retroalimentacion_4">
-                    </div>                    
-                </div>
-
-                <!-- Pregunta #5 -->
-                <div class="col-12 mt-5" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
-                    <h4 class="mb-3 mb-4">5. Uno de los 4 aspectos importantes del 7mo hábito: Afilar la Sierra.</h4>
-                    <div class="h4" style="display: flex; width: -webkit-fill-available; justify-content: space-evenly;">
-                      <!-- Opción #1 -->
-                      <div>
-                          <input id="emocional" type="checkbox" style="zoom: 1.5;"> Emocional
-                      </div>
-                      <!-- Opción #2 -->
-                      <div>
-                          <input id="hambre" type="checkbox" style="zoom: 1.5;"> Hambre
-                      </div>
-                      <!-- Opción #3 -->
-                      <div>
-                          <input id="olvido" type="checkbox" style="zoom: 1.5;"> Olvido
-                      </div>
-                      <!-- Opción #4 -->
-                      <div>
-                          <input id="confusion" type="checkbox" style="zoom: 1.5;"> Confusión
-                      </div>
-                        
-                    </div>
-                    <div id="retroalimentacion_5">
-                    </div>                    
-                </div>
-
-                <!-- Pregunta #6 -->
-                <div class="col-12 mt-5" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
-                    <h4 class="mb-3 mb-4">6. ¿Quién escribió el libro de "Los 7 hábitos de la gente altamente efectiva"?</h4>
-                    <div class="h4" style="display: flex; width: -webkit-fill-available; justify-content: space-evenly;">
-                      <!-- Opción #1 -->
-                      <div>
-                          <input id="bill" type="checkbox" style="zoom: 1.5;"> Bill Gates
-                      </div>
-                      <!-- Opción #2 -->
-                      <div>
-                          <input id="stephen" type="checkbox" style="zoom: 1.5;"> Stephen Covey
-                      </div>
-                      <!-- Opción #3 -->
-                      <div>
-                          <input id="carlos" type="checkbox" style="zoom: 1.5;"> Carlos Slim
-                      </div>
-                      <!-- Opción #4 -->
-                      <div>
-                          <input id="hawking" type="checkbox" style="zoom: 1.5;"> Stephen Hawking
-                      </div>
-                        
-                    </div>
-                    <div id="retroalimentacion_6">
-                    </div>                    
-                </div>
-
-                <!-- Calificación  -->
-                <div class="mt-5" style="width: -webkit-fill-available; display: flex; justify-content: center;">
-                    <h3 style="display: flex; justify-content: center; margin-right: 10px;">Calificación: </h3>
-                    <h3 id="calificacion"></h3>
-                </div>
-                <!-- Revisar Respuestas  -->
-                <div class="row mt-5 mb-3" style="width: -webkit-fill-available; display: flex; justify-content: space-evenly;">
-                    <button type="button" class="btn btn-danger" onclick="location.href='Instrucciones.html'">Regresar</button>
-                    <button type="button" class="btn btn-success" onclick="submit()">Revisar</button>
-                </div>              
+          
+          <!-- Pregunta #2 -->
+          <div class="col-12 mt-5" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
+            <h4 class="mb-3 mb-4">2. Es una de las opciones de menús que se pueden encontrar dentro del Portal de American Institute of Physics:</h4>
+            <div class="h4" style="display: flex; width: -webkit-fill-available; justify-content: space-evenly;">
+              <!-- Opción #1 -->
+              <div>
+                <input id="Students" name="pregunta2" type="radio" style="zoom: 1.2;"> Students
+              </div>
+              <!-- Opción #2 -->
+              <div>
+                <input id="Publishers" name="pregunta2" type="radio" style="zoom: 1.2;"> Publishers
+              </div>
+              <!-- Opción #3 -->
+              <div>
+                <input id="Books" name="pregunta2" type="radio" style="zoom: 1.2;"> Books
+              </div>
+              <!-- Opción #4 -->
+              <div>
+                <input id="Thesaurus" name="pregunta2" type="radio" style="zoom: 1.2;"> Thesaurus
+              </div>
+              
+            </div>
+            <div id="retroalimentacion_2">
+            </div>                    
+          </div>
+          
+          <!-- Pregunta #3 -->
+          <div class="col-12 mt-5" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
+            <h4 class="mb-3 mb-4">3. Opción que permite crear listas de enlaces para seleccionar artículos de interés dentro del Portal del American Institute of Physics:</h4>
+            <div class="h4" style="display: flex; width: -webkit-fill-available; justify-content: space-evenly;">
+              <!-- Opción #1 -->
+              <div>
+                <input id="MyProfile" name="pregunta3" type="radio" style="zoom: 1.2;"> MyProfile
+              </div>
+              <!-- Opción #2 -->
+              <div>
+                <input id="Searches" name="pregunta3" type="radio" style="zoom: 1.2;"> Searches & Alerts
+              </div>
+              <!-- Opción #3 -->
+              <div>
+                <input id="Content" name="pregunta3" type="radio" style="zoom: 1.2;"> Content & Orders
+              </div>
+              <!-- Opción #4 -->
+              <div>
+                <input id="Favorites" name="pregunta3" type="radio" style="zoom: 1.2;"> Favorites
+              </div>
+              
+            </div>
+            <div id="retroalimentacion_3">
+            </div>                    
+          </div>
+          
+          <!-- Pregunta #4 -->
+          <div class="col-12 mt-5" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
+            <h4 class="mb-3 mb-4">4. Es el tipo de búsqueda que permite buscar información en todo un sistema de manera rápida, utilizando uno o varios términos combinados con operadores booleanos o comodines:</h4>
+            <div class="h4" style="display: flex; width: -webkit-fill-available; justify-content: space-evenly;">
+              <!-- Opción #1 -->
+              <div>
+                <input id="Simple" name="pregunta4" type="radio" style="zoom: 1.2;"> Búsqueda Simple
+              </div>
+              <!-- Opción #2 -->
+              <div>
+                <input id="Avanzada" name="pregunta4" type="radio" style="zoom: 1.2;"> Búsqueda Avanzada
+              </div>
+              <!-- Opción #3 -->
+              <div>
+                <input id="Autores" name="pregunta4" type="radio" style="zoom: 1.2;"> Búsqueda por Autores
+              </div>
+              <!-- Opción #4 -->
+              <div>
+                <input id="Materias" name="pregunta4" type="radio" style="zoom: 1.2;"> Búsqueda por Materias
               </div>
             </div>
-      </section>     
-      
+            <div id="retroalimentacion_4">
+            </div>                    
+          </div>
+          
+          <!-- Pregunta #5 -->
+          <div class="col-12 mt-5" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
+            <h4 class="mb-3 mb-4">5.	Es el código estándar internacional que permite la identificación de cualquier publicación seriada, incluyendo publicaciones electrónicas, con independencia del país de publicación, idioma o alfabeto:</h4>
+            <div class="h4" style="display: flex; width: -webkit-fill-available; justify-content: space-evenly;">
+              <!-- Opción #1 -->
+              <div>
+                <input id="INE" name="pregunta5" type="radio" style="zoom: 1.2;"> INE
+              </div>
+              <!-- Opción #2 -->
+              <div>
+                <input id="ISSN" name="pregunta5" type="radio" style="zoom: 1.2;"> ISSN
+              </div>
+              <!-- Opción #3 -->
+              <div>
+                <input id="NOT" name="pregunta5" type="radio" style="zoom: 1.2;"> NOT
+              </div>
+              <!-- Opción #4 -->
+              <div>
+                <input id="CURP" name="pregunta5" type="radio" style="zoom: 1.2;"> CURP
+              </div>
+              
+            </div>
+            <div id="retroalimentacion_5">
+            </div>                    
+          </div>
+          
+          <!-- Pregunta #6 -->
+          <div class="col-12 mt-5" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
+            <h4 class="mb-3 mb-4">6. El operador lógico ________ es el operador para la unión de conjuntos.</h4>
+            <div class="h4" style="display: flex; width: -webkit-fill-available; justify-content: space-evenly;">
+              <!-- Opción #1 -->
+              <div>
+                <input id="AND" name="pregunta6" type="radio" style="zoom: 1.2;"> AND
+              </div>
+              <!-- Opción #2 -->
+              <div>
+                <input id="NOTT" name="pregunta6" type="radio" style="zoom: 1.2;"> NOT
+              </div>
+              <!-- Opción #3 -->
+              <div>
+                <input id="NOR" name="pregunta6" type="radio" style="zoom: 1.2;"> NOR 
+              </div>
+              <!-- Opción #4 -->
+              <div>
+                <input id="OR" name="pregunta6" type="radio" style="zoom: 1.2;"> OR
+              </div>
+              
+            </div>
+            <div id="retroalimentacion_6">
+            </div>                    
+          </div>
+          
+          <!-- Pregunta #7 -->
+          <div class="col-12 mt-5" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
+            <h4 class="mb-3 mb-4">7. Los _________ seleccionan documentos que incluyen correspondencias a una cadena de caracteres que incluye variables.</h4>
+            <div class="h4" style="display: flex; width: -webkit-fill-available; justify-content: space-evenly;">
+              <!-- Opción #1 -->
+              <div>
+                <input id="Comodines" name="pregunta7" type="radio" style="zoom: 1.2;"> Comodines
+              </div>
+              <!-- Opción #2 -->
+              <div>
+                <input id="Metadatos" name="pregunta7" type="radio" style="zoom: 1.2;"> Metadatos
+              </div>
+              <!-- Opción #3 -->
+              <div>
+                <input id="booleanos" name="pregunta7" type="radio" style="zoom: 1.2;"> Operadores booleanos 
+              </div>
+              <!-- Opción #4 -->
+              <div>
+                <input id="proximidad" name="pregunta7" type="radio" style="zoom: 1.2;"> Operadores de proximidad
+              </div>
+              
+            </div>
+            <div id="retroalimentacion_7">
+            </div>                    
+          </div>
+
+          <!-- Pregunta #8 -->
+          <div class="col-12 mt-5" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
+            <h4 class="mb-3 mb-4">8. Son obras que han sido publicadas por el mismo editor financiero y tiene un estilo común y un formato uniforme.</h4>
+            <div class="h4" style="display: flex; width: -webkit-fill-available; justify-content: space-evenly;">
+              <!-- Opción #1 -->
+              <div>
+                <input id="Revistas" name="pregunta8" type="radio" style="zoom: 1.2;"> Revistas
+              </div>
+              <!-- Opción #2 -->
+              <div>
+                <input id="Colecciones" name="pregunta8" type="radio" style="zoom: 1.2;"> Colecciones
+              </div>
+              <!-- Opción #3 -->
+              <div>
+                <input id="Thesauruss" name="pregunta8" type="radio" style="zoom: 1.2;"> Thesaurus 
+              </div>
+              <!-- Opción #4 -->
+              <div>
+                <input id="Libros" name="pregunta8" type="radio" style="zoom: 1.2;"> Libros
+              </div>
+              
+            </div>
+            <div id="retroalimentacion_8">
+            </div>                    
+          </div>
+
+          <!-- Pregunta #9 -->
+          <div class="col-12 mt-5" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
+            <h4 class="mb-3 mb-4">9. Es el término simple o complejo por medio del cual es posible acceder a determinada información mediante un sistema de recuperación, sea manual o automático.</h4>
+            <div class="h4" style="display: flex; width: -webkit-fill-available; justify-content: space-evenly;">
+              <!-- Opción #1 -->
+              <div>
+                <input id="Revistaaa" name="pregunta9" type="radio" style="zoom: 1.2;"> Revista
+              </div>
+              <!-- Opción #2 -->
+              <div>
+                <input id="Autorrr" name="pregunta9" type="radio" style="zoom: 1.2;"> Autor
+              </div>
+              <!-- Opción #3 -->
+              <div>
+                <input id="PalabraClave" name="pregunta9" type="radio" style="zoom: 1.2;"> Palabra Clave 
+              </div>
+              <!-- Opción #4 -->
+              <div>
+                <input id="OperadorBooleano" name="pregunta9" type="radio" style="zoom: 1.2;"> Operador booleano
+              </div>              
+            </div>
+            <div id="retroalimentacion_9">
+            </div>                    
+          </div>
+
+          <!-- Pregunta #10 -->
+          <div class="col-12 mt-5" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
+            <h4 class="mb-3 mb-4">10.	Es una medida relacionada con la importancia de una publicación científica:</h4>
+            <div class="h4" style="display: flex; width: -webkit-fill-available; justify-content: space-evenly;">
+              <!-- Opción #1 -->
+              <div>
+                <input id="FactorImpacto" name="pregunta10" type="radio" style="zoom: 1.2;"> Factor de Impacto
+              </div>
+              <!-- Opción #2 -->
+              <div>
+                <input id="Eigenfactor" name="pregunta10" type="radio" style="zoom: 1.2;"> Eigenfactor
+              </div>
+              <!-- Opción #3 -->
+              <div>
+                <input id="Abstract" name="pregunta10" type="radio" style="zoom: 1.2;"> Abstract 
+              </div>
+              <!-- Opción #4 -->
+              <div>
+                <input id="Tema" name="pregunta10" type="radio" style="zoom: 1.2;"> Tema
+              </div>              
+            </div>
+            <div id="retroalimentacion_10">
+            </div>                    
+          </div>
+          
+          <!-- Calificación  -->
+          <div class="mt-5" style="width: -webkit-fill-available; display: flex; justify-content: center;">
+            <h3 style="display: flex; justify-content: center; margin-right: 10px;">Calificación: </h3>
+            <h3 id="calificacion"></h3>
+          </div>
+          <!-- Revisar Respuestas  -->
+          <div class="row mt-5 mb-3" style="width: -webkit-fill-available; display: flex; justify-content: space-evenly;">
+            <button type="button" class="btn btn-danger" onclick="location.href='Instrucciones.html'">Regresar</button>
+            <button type="button" class="btn btn-success" onclick="submit()">Revisar</button>
+          </div>              
+        </div>
+      </div>
+    </section>     
     
-</body>
-</html>
+    
+  </body>
+  </html>
